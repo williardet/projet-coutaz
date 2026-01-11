@@ -1,0 +1,102 @@
+[
+    {
+        "id": "q1",
+        "question": "Quel domaine scientifique est associé à Joëlle Coutaz ?",
+        "options": [
+            "Biologie",
+            "Interaction homme-machine",
+            "Astronomie"
+        ],
+        "answer": "Interaction homme-machine"
+    },
+    {
+        "id": "q2",
+        "question": "Dans quelle ville a-t-elle fondé le groupe IIHM ?",
+        "options": [
+            "Paris",
+            "Grenoble",
+            "Lyon"
+        ],
+        "answer": "Grenoble"
+    },
+    {
+        "id": "q3",
+        "question": "Quelle notion a-t-elle introduite dans la conception d’interfaces ?",
+        "options": [
+            "Plasticité",
+            "Virtualité",
+            "Réalité augmentée"
+        ],
+        "answer": "Plasticité"
+    },
+    {
+        "id": "q4",
+        "question": "Quel projet européen a-t-elle coordonné ?",
+        "options": [
+            "FAME",
+            "Horizon",
+            "Galileo"
+        ],
+        "answer": "FAME"
+    },
+    {
+        "id": "q5",
+        "question": "Quel est le nom du modèle d’architecture qu’elle a proposé ?",
+        "options": [
+            "CAMELEON-RT",
+            "CHAMELEON-UX",
+            "LIZARD-UI"
+        ],
+        "answer": "CAMELEON-RT"
+    },
+    {
+        "id": "q6",
+        "question": "Quelle distinction a-t-elle reçue en 2013 ?",
+        "options": [
+            "Légion d’honneur",
+            "Prix Nobel",
+            "Médaille Fields"
+        ],
+        "answer": "Légion d’honneur"
+    },
+    {
+        "id": "q7",
+        "question": "Quel projet vise à programmer la maison connectée ?",
+        "options": [
+            "AppsGate",
+            "SmartHomeX",
+            "Domotix"
+        ],
+        "answer": "AppsGate"
+    },
+    {
+        "id": "q8",
+        "question": "Quel langage de description d’interface est lié à ses travaux ?",
+        "options": [
+            "UsiXML",
+            "HTML",
+            "CSS"
+        ],
+        "answer": "UsiXML"
+    },
+    {
+        "id": "q9",
+        "question": "Quelle approche expérimentale a-t-elle utilisée pour AppsGate ?",
+        "options": [
+            "Vivre avec",
+            "Simulation en laboratoire",
+            "Étude statistique"
+        ],
+        "answer": "Vivre avec"
+    },
+    {
+        "id": "q10",
+        "question": "Quel est le domaine de ses publications ?",
+        "options": [
+            "Interaction homme-machine",
+            "Intelligence artificielle",
+            "Robotique"
+        ],
+        "answer": "Interaction homme-machine"
+    }
+]
