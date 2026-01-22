@@ -1,83 +1,215 @@
-body{
-    background-color: #577042;
-}
-h4 {
-    text-decoration: underline;
+body {
     margin: 0;
-    margin-top: 10px;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.conteneur-page {
-    padding-top: 65px;
-}
-
-.conteneur-page>div {
-    background-color: #00000063;
+/* Nav barre */
+nav {
+    display: flex;
+    background-color: rgb(41, 41, 43);
     height: 60px;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-}
-.conteneur-page>div >h2{
-    margin:0;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
 }
 
-.conteneur {
-    flex: 1;
-    width: auto;
-    border-radius: 20px;
+.aligner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav li>a {
+    color: rgb(143, 142, 142);
+}
+
+.actif {
+    color: white;
+    font-size: 15px;
+}
+
+nav button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    display: block;
+    position: relative;
+}
+
+nav button span::before,
+nav button span::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
+nav button span::before {
+    top: -8px;
+}
+
+nav button span::after {
+    top: 8px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 10px;
+    box-shadow: 0 5px 5px rgba(169, 169, 169, 0.2);
+}
+
+h1 {
+    color: rgb(45, 44, 44);
+    font-weight: 900;
+    font-size: 32px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/* Contenu de page */
+.contenue {
+    width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(169, 169, 169, 0.27);
+    border-radius: 10px;
+    border: 1px solid rgba(169, 169, 169, 0.27);
+}
+
+main p {
+    color: gray;
+    line-height: 25px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 27px;
+    color: rgb(45, 44, 44);
+    font-weight: 800;
+}
+
+main h4 {
+    font-size: 20px;
+    color: rgb(45, 44, 44);
+    margin-top: 20px;
+}
+
+.galerie {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.conteneur>section {
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 20px;
-    width: 92%;
-    background-color: white;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.077);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-#images-portrait {
-    justify-content: space-between;
+.galerie>div {
     display: flex;
-    padding: 15px;
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 5px;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-img {
-    height: 100%;
-    width: 15%;
-    align-self: center;
+.galerie>div>div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
-.conteneur>article {
-    text-align: justify;
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.galerie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.conteneur>article>h1 {
+
+footer {
+    background-color: rgb(45, 44, 44);
     text-align: center;
+    padding: 15px 0;
+    color: white;
 }
 
-.conteneur>article>section {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
+/* Version Tablette*/
+@media (max-width: 900px) {
+    .galerie>div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galerie>div>div {
+        width: 45%;
+    }
 }
 
-.conteneur>article>section>p {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
+/* Version Mobile*/
+@media (max-width: 600px) {
+
+    nav {
+        padding: 0 10px;
+    }
+
+    /* bouton menu visible */
+    nav button {
+        display: block;
+    }
+
+    /* menu caché */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgb(41, 41, 43);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 60%;
+        padding: 20px;
+    }
+
+    /* menu visible quand actif */
+    nav ul.active {
+        display: flex;
+    }
+
+    .contenue {
+        width: 95%;
+    }
+
+    .galerie>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie>div>div {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
 }

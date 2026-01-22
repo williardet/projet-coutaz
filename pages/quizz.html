@@ -4,59 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz</title>
-    <link rel="shortcut icon" href="../images/apps.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/styleH&F.css">
+    <title>Quizz - Joëlle Coutaz</title>
+    <link rel="shortcut icon" href="../images/books-stack-of-three.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/styleQuizz.css">
-     <script src="../js/script_quizz.js"></script>
+    <script src="../js/script_quizz.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <!--icone-->
-            <div>
-            </div>
+    <nav>
+        <div class="aligner">
+            <a href="../index.html">Joëlle Coutaz</a>
+            <button id="menu-btn">
+                <span></span>
+            </button>
         </div>
-        <!--menu-->
-        <nav>
-            <ul>
+        <div>
+            <ul id="menu">
                 <li><a href="../index.html">Introduction</a></li>
                 <li><a href="portrait.html">Portrait</a></li>
                 <li><a href="realisation.html">Réalisation</a></li>
-                <li><a id="a_actif" href="quizz.html">Quizz</a></li>
+                <li><a class="actif" href="quizz.html">Quizz</a></li>
             </ul>
-        </nav>
-        <!--coin-->
-        <div id="vide"></div>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <h1>Quiz : Connaissez-vous Joëlle Coutaz ?</h1>
+            <p>
+                Testez vos connaissances à travers 10 questions interactives.
+            </p>
+        </div>
     </header>
     <!--corps de page-->
-    <section class="conteneur-page">
-        <div>
-            <h1><u>Quiz</u> : Connaissez-vous Joëlle Coutaz ?</h1>
-        </div>
+    <main>
         <section>
             <div>
                 <p id="score"></p>
             </div>
-            <section>
-                <form id="quizForm">
-                    <fieldset id="questionsContainer">
-                        
-                    </fieldset>
-                    <div id="boutons">
-                        <input type="reset" value="reset">
-                        <input type="submit" value="submit">
-                    </div>
-                </form>
-            </section>
-        </section>
-        <!--pied de page-->
-        <footer>
-            <p><u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u></p>
-        </footer>
-    </section>
+            <form id="quizForm">
+                <fieldset id="questionsContainer">
 
+                </fieldset>
+                <div id="boutons">
+                    <input type="reset" value="reset">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--pied de page-->
+    <footer>
+        <p><u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u></p>
+    </footer>
 </body>
 
 </html>

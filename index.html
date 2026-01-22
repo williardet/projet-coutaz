@@ -4,136 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduire: Joëlle Coutaz</title>
-    <link rel="shortcut icon" href="images/apps.png" type="image/x-icon">
+    <title>Introduire - Joëlle Coutaz</title>
+    <link rel="shortcut icon" href="images/books-stack-of-three.png" type="image/x-icon">
     <link rel="stylesheet" href="style/styleIndex.css">
-    <link rel="stylesheet" href="style/styleH&F.css">
+    <script src="js/script_quizz.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <!--icone-->
-            <div>
-            </div>
+    <nav>
+        <div class="aligner">
+            <a href="index.html">Joëlle Coutaz</a>
+            <button id="menu-btn">
+                <span></span>
+            </button>
         </div>
-        <!--menu-->
-        <nav>
-            <ul>
-                <li><a id="a_actif" href="index.html">Introduction</a></li>
+        <div>
+            <ul id="menu">
+                <li><a class="actif" href="index.html">Introduction</a></li>
                 <li><a href="pages/portrait.html">Portrait</a></li>
                 <li><a href="pages/realisation.html">Réalisation</a></li>
                 <li><a href="pages/quizz.html">Quizz</a></li>
             </ul>
-        </nav>
-        <!--coin-->
-        <div id="vide"></div>
-    </header>
+        </div>
+    </nav>
     <!--corps de page-->
-    <div class="conteneur-page">
-        <section id="conteneur">
+    <header>
+        <div>
+            <h1>Présentation de l'application</h1>
+            <p>
+                Découvrez le parcours, les réalisations et l’impact majeur de Joëlle Coutaz,
+                pionnière de l’interaction homme‑machine.
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="contenue">
+            <aside>
+                <a href="pages/portrait.html">Portrait</a>
+            </aside>
             <section>
-                <h1>Description de l'application</h1>
-                <p>Cette page présente le projet et son objectif : faire découvrir le parcours et les contributions
-                    majeures
-                    de Joëlle Coutaz,
-                    figure incontournable de l’informatique française. Elle explique également le contenu des
-                    différentes
-                    sections du site
-                <section> <!-- arrière plan noir-->
-                    <section> <!--arrière plan blanc-->
-                        <article class="double"> <!--portrait-->
-                            <aside class="carré">
-                               <a href="pages/portrait.html">Portrait</a>
-                            </aside>
-                            <section id="double">
-                                <section id="triple-images"> <!-- trois photos de coutaz-->
-                                    <img src="images/146.jpg" alt="1">
-                                    <img src="images/156.jpg" alt="2">
-                                    <img src="images/56.jpg" alt="3">
-                                </section>
-                                <div>
-                                    <p style="border-left: 1px solid; padding-left: 10px;">
-                                        Cette section propose une plongée dans le parcours de Joëlle Coutaz, figure
-                                        majeure de l’informatique française. On y retrace les étapes clés de sa vie : de
-                                        sa formation académique à ses premiers pas dans la recherche, en passant par ses
-                                        engagements scientifiques et les jalons marquants de sa carrière.
-                                        À travers une narration structurée et vivante, le lecteur découvre comment ses
-                                        choix, ses collaborations et ses convictions ont façonné une trajectoire
-                                        exemplaire dans le domaine de l’interaction homme-machine.
-                                        Des photographies soigneusement sélectionnées accompagnent chaque moment fort,
-                                        illustrant à la fois son évolution personnelle et son rayonnement professionnel.
-                                        Cette mise en récit visuelle et biographique permet de mieux comprendre l’impact
-                                        de ses travaux et l’héritage qu’elle laisse dans le monde numérique.
-
-                                    </p>
-                                </div>
-                            </section>
-                        </article>
-                        <article class="double" id="bg-foncé"> <!--realisation-->
-                            <aside class="carré">
-                                    <a href="pages/realisation.html">Réalisation</a>
-                            </aside>
-                            <section class="colonne">
-                                <p>On y explore en profondeur ses contributions scientifiques, en particulier dans le
-                                    champ
-                                    de l’interaction homme-machine, où elle a joué un rôle pionnier. Ses publications,
-                                    ses
-                                    projets de recherche et les innovations qu’elle a portées témoignent d’une vision
-                                    audacieuse du numérique et d’un engagement constant envers l’accessibilité
-                                    technologique. Chaque section est illustrée par des visuels clairs et pertinents,
-                                    facilitant la compréhension de ses travaux et mettant en lumière leur portée dans
-                                    les
-                                    usages contemporains. Ce parcours met en évidence l’impact durable de ses recherches
-                                    sur les interfaces, les systèmes intelligents et la manière dont les humains
-                                    interagissent avec les machines.
-                                </p>
-                                <section> <!--section de texte descriptif et de quelques projets-->
-                                    <article>
-                                        <p>De 2001 à 2004, Joëlle Coutaz contribue au projet FAME
-                                            en collaboration avec le Karlsruhe Institute of Technology</p>
-                                    </article>
-                                    <article>
-                                        <p>Elle contribue au projet CAMELEON</p>
-                                    </article>
-                                    <article>
-                                        <p>Entre 2008 et 2011, elle contribue au projet CONTINUUM</p>
-                                    </article>
-                                </section>
-                            </section>
-                        </article>
-                        <article class="double"> <!--quizz-->
-                            <aside class="carré">
-                                <a href="pages/quizz.html">Quizz</a>
-                            </aside>
-                            <div id="double">
-                                <p>
-                                    Cette page interactive propose un quiz de 10 questions conçu pour évaluer les
-                                    connaissances acquises sur Joëlle Coutaz et l’ensemble de ses travaux. À travers des
-                                    questions variées portant sur ses contributions en interaction homme-machine, ses
-                                    publications majeures et ses projets de recherche, les visiteurs peuvent tester leur
-                                    compréhension de manière ludique.
-                                    Une fois le questionnaire complété, un score personnalisé s’affiche, permettant à
-                                    chacun
-                                    de mesurer son niveau de compréhension et d’identifier les points à approfondir. Ce
-                                    quiz
-                                    constitue une manière dynamique de revisiter les apports scientifiques de Joëlle
-                                    Coutaz
-                                    tout en consolidant les apprentissages
-
-                                </p>
-                            </div>
-                        </article>
-                    </section>
-                </section>
+                <div class="image-triple">
+                    <div><img src="images/146.jpg" alt="1"></div>
+                    <div><img src="images/156.jpg" alt="2"></div>
+                    <div><img src="images/56.jpg" alt="3"></div>
+                </div>
+                <p>
+                    Cette section retrace les étapes clés de la vie de Joëlle Coutaz : formation,
+                    carrière scientifique, engagements et contributions majeures dans le domaine de
+                    l’interaction homme‑machine. Une biographie illustrée qui met en lumière son
+                    influence durable dans le monde numérique.
+                </p>
             </section>
         </section>
-        <!--pied de page-->
-        <footer>
-            <p><u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u></p>
-        </footer>
-    </div>
 
+        <section class="contenue">
+            <aside class="gris-1">
+                <a href="pages/realisation.html">Réalisation</a>
+            </aside>
+            <section>
+                <p>
+                    Explorez ses contributions scientifiques majeures, ses projets de recherche et son rôle
+                    pionnier dans l’évolution des interfaces et systèmes interactifs.
+                </p>
+                <ul>
+                    <li>Projet FAME (2001–2004) – Collaboration avec le KIT</li>
+                    <li>Projet CAMELEON – Ingénierie des interfaces adaptatives</li>
+                    <li>Projet CONTINUUM (2008–2011) – Interactions multi‑supports</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="contenue">
+            <aside>
+                <a href="pages/quizz.html">Quizz</a>
+            </aside>
+            <section>
+                <p>
+                    Testez vos connaissances grâce à un quiz interactif de 10 questions portant sur la vie,
+                    les travaux et les contributions de Joëlle Coutaz. Un moyen ludique d’évaluer votre
+                    compréhension et d’approfondir vos connaissances.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u>
+        </p>
+    </footer>
 </body>
 
 </html>
