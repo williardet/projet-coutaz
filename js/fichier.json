@@ -21,7 +21,7 @@
     },
     {
         "id": "q3",
-        "question": "Quelle notion a-t-elle introduite dans la conception d’interfaces ?",
+        "question": "Quelle notion a-t-elle introduite dans la conception d'interfaces ?",
         "options": [
             "Plasticité",
             "Virtualité",
@@ -41,7 +41,7 @@
     },
     {
         "id": "q5",
-        "question": "Quel est le nom du modèle d’architecture qu’elle a proposé ?",
+        "question": "Quel est le nom du modèle d'architecture qu'elle a proposé ?",
         "options": [
             "CAMELEON-RT",
             "CHAMELEON-UX",
@@ -53,11 +53,11 @@
         "id": "q6",
         "question": "Quelle distinction a-t-elle reçue en 2013 ?",
         "options": [
-            "Légion d’honneur",
+            "Légion d'honneur",
             "Prix Nobel",
             "Médaille Fields"
         ],
-        "answer": "Légion d’honneur"
+        "answer": "Légion d'honneur"
     },
     {
         "id": "q7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "q8",
-        "question": "Quel langage de description d’interface est lié à ses travaux ?",
+        "question": "Quel langage de description d'interface est lié à ses travaux ?",
         "options": [
             "UsiXML",
             "HTML",

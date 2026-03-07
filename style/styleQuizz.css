@@ -147,6 +147,11 @@ footer {
     color: white;
 }
 
+footer a{
+    color:white;
+    text-decoration: underline;
+}
+
 /* Version Tablette*/
 @media (max-width: 900px) {
     main section {
