@@ -2,33 +2,48 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("menu-btn");
     const menu = document.getElementById("menu");
 
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("active");
-    });
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            btn.classList.toggle("open");
+        });
+    }
 
     let questions = [];
+    const quizForm = document.getElementById("quizForm");
+    const questionsContainer = document.getElementById("questionsContainer");
 
-    fetch("../js/fichier.json")
-        .then(reponse => reponse.json())
-        .then(data => {
-            questions = data;
-            afficherQuestions(questions);
-        });
+    // Gestion dynamique du chemin du JSON selon la page
+    const jsonPath = window.location.pathname.includes('/pages/') ? "../js/fichier.json" : "js/fichier.json";
+
+    if (questionsContainer) {
+        fetch(jsonPath)
+            .then(reponse => reponse.json())
+            .then(data => {
+                questions = data;
+                afficherQuestions(questions);
+            })
+            .catch(err => console.error("Erreur chargement questions:", err));
+    }
 
     function afficherQuestions(questions) {
-        const fieldset = document.getElementById("questionsContainer");
-        fieldset.innerHTML = "";
+        questionsContainer.innerHTML = "";
 
         questions.forEach(q => {
-            const div = document.createElement("div");
-            div.innerHTML = `<p>${q.question}</p>`;
+            const div = document.createElement("article");
+            div.className = "quiz-question";
+            div.innerHTML = `<h3>${q.question}</h3>`;
+            const optionsDiv = document.createElement("div");
+            optionsDiv.className = "quiz-options";
+            
             q.options.forEach(opt => {
-                div.innerHTML += `
+                optionsDiv.innerHTML += `
                 <label>
                     <input type="radio" name="${q.id}" value="${opt}"> ${opt}
-                </label><br>`;
+                </label>`;
             });
-            fieldset.appendChild(div);
+            div.appendChild(optionsDiv);
+            questionsContainer.appendChild(div);
         });
     }
 
@@ -44,8 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        document.getElementById("score").textContent = `Score : ${score}/${total}`;
+        const scoreElement = document.getElementById("score");
+        if (scoreElement) {
+            scoreElement.textContent = `Score : ${score}/${total}`;
+            scoreElement.style.display = "inline-block";
+        }
     }
 
-    document.getElementById("quizForm").addEventListener("submit", calculScore);
+    if (quizForm) {
+        quizForm.addEventListener("submit", calculScore);
+        quizForm.addEventListener("reset", () => {
+            const scoreElement = document.getElementById("score");
+            if (scoreElement) scoreElement.style.display = "none";
+        });
+    }
 });

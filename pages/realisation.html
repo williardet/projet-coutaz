@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realisation - Joëlle Coutaz</title>
+    <title>Réalisations - Joëlle Coutaz</title>
     <link rel="shortcut icon" href="../images/books-stack-of-three.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/styleRealisation.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script_quizz.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="aligner">
-            <a href="../index.html">Joëlle Coutaz</a>
+            <a href="../index.html" class="nav-brand">Joëlle Coutaz</a>
             <button id="menu-btn">
                 <span></span>
             </button>
-        </div>
-        <div>
-            <ul id="menu">
+            <ul id="menu" class="nav-links">
                 <li><a href="../index.html">Introduction</a></li>
                 <li><a href="portrait.html">Portrait</a></li>
                 <li><a class="actif" href="realisation.html">Réalisation</a></li>
@@ -27,116 +25,53 @@
             </ul>
         </div>
     </nav>
-    <!--corps de page-->
-    <header>
-        <div>
+
+    <header class="hero">
+        <div class="container">
             <h1>Réalisation</h1>
             <p>
                 Une exploration des contributions majeures de Joëlle Coutaz dans l'interaction homme-machine.
             </p>
         </div>
     </header>
-    <!--corps de page-->
-    <main>
-        <section>
-            <div class="texte">
+
+    <main class="container">
+        <section class="section-card">
+            <article>
+                <h2>Impact Scientifique</h2>
                 <p>
                     Joëlle Coutaz est une pionnière de l'interaction homme-machine. Ses travaux ont façonné la manière
                     dont les humains interagissent avec les systèmes numériques. Ses recherches sur les interfaces,
                     l'ingénierie des modèles et les systèmes interactifs ont permis de rendre la technologie plus
                     intuitive, accessible et centrée sur l'humain.
                 </p>
-            </div>
-            <section class="travail">
-                <div>
-                    <div>
+
+                <div class="travail">
+                    <div class="travail-item">
                         <h4>Architecture PAC</h4>
-                        <p>
-                            Dès les années 1980, elle structure le domaine de l'IHM en France et fonde le groupe IIHM au
-                            LIG, devenant une figure centrale de la recherche sur les interfaces interactives.
-                        </p>
+                        <p>Elle propose l'architecture Présentation-Abstraction-Contrôle, un modèle fondateur encore utilisé pour concevoir des interfaces modulaires.</p>
                     </div>
-                    <div>
-                        <h4>Fondatrice de l'IHM en France</h4>
-                        <p>
-                            Elle propose l'architecture Présentation-Abstraction-Contrôle, un modèle fondateur encore
-                            utilisé pour concevoir des interfaces modulaires et adaptatives.
-                        </p>
+                    <div class="travail-item">
+                        <h4>Plasticité</h4>
+                        <p>Elle définit la capacité d'une interface à s'adapter à différents contextes tout en conservant sa qualité d'usage.</p>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <h4>Plasticité des interfaces</h4>
-                        <p>
-                            Elle définit la plasticité : la capacité d'une interface à s'adapter à différents contextes
-                            tout en conservant sa qualité d'usage.
-                        </p>
+                    <div class="travail-item">
+                        <h4>Projet FAME</h4>
+                        <p>Développement d'agents intelligents facilitant la communication interculturelle par interaction multimodale.</p>
                     </div>
-                    <div>
-                        <h4>Interaction multimodale</h4>
-                        <p>
-                            Elle explore l'intégration de la parole, du geste, de la vision et de la manipulation
-                            d'objets, anticipant les interfaces naturelles modernes.
-                        </p>
+                    <div class="travail-item">
+                        <h4>AppsGate</h4>
+                        <p>Permettre aux non-programmeurs de piloter leur habitat intelligent via des interfaces intuitives.</p>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h4>Projet FAME (2002-2004)</h4>
-                        <p>
-                            En collaboration avec le KIT, elle développe un agent intelligent facilitant la
-                            communication
-                            interculturelle grâce à des interactions multimodales.
-                        </p>
-                    </div>
-                    <div>
-                        <h4>Projet CAMELEON</h4>
-                        <p>
-                            Elle contribue à la conception d'interfaces sensibles au contexte, capables de s'adapter à
-                            divers dispositifs tout en restant cohérentes.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h4>Projet CONTINUUM (2008-2011)</h4>
-                        <p>
-                            Elle explore la continuité de service dans les environnements ubiquitaires, entre gestion du
-                            contexte et autonomie des systèmes intelligents.
-                        </p>
-                    </div>
-                    <div>
-                        <h4>Projet UsiXML (2009-2012)</h4>
-                        <p>
-                            Elle participe au développement d'un langage de balisage pour interfaces, facilitant leur
-                            adaptation à différents contextes d'usage.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h4>Projet AppsGate (2012-2015)</h4>
-                        <p>
-                            Elle contribue à un environnement permettant aux non-programmeurs de créer leurs propres
-                            applications pour piloter leur habitat intelligent.
-                        </p>
-                    </div>
-                    <div>
-                        <h4>Distinctions internationales</h4>
-                        <p>
-                            Membre de l'ACM SIGCHI Academy, IFIP Fellow, lauréate du Pioneer Award, Chevalier de la
-                            Légion d'honneur, et docteure honoris causa (Glasgow, Hasselt).
-                        </p>
-                    </div>
-                </div>
-            </section>
+            </article>
         </section>
     </main>
-    <footer>
-        <p>
-            <u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u> |
-            <a href="../mention/mentions-legales.html" target="_blank">Mentions légales</a>
-        </p>
+
+    <footer class="main-footer">
+        <div class="container">
+           <p>Réalisé par <span>T-Julfab</span> | <a href="../mention/mentions-legales.html" style="color: #2972d9;">Mentions Légales</a> | Tous les droits sont réservés</p>
+        </div>
     </footer>
 </body>
 

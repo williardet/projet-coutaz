@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz - Joëlle Coutaz</title>
+    <title>Quiz - Joëlle Coutaz</title>
     <link rel="shortcut icon" href="../images/books-stack-of-three.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/styleQuizz.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script_quizz.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="aligner">
-            <a href="../index.html">Joëlle Coutaz</a>
+            <a href="../index.html" class="nav-brand">Joëlle Coutaz</a>
             <button id="menu-btn">
                 <span></span>
             </button>
-        </div>
-        <div>
-            <ul id="menu">
+            <ul id="menu" class="nav-links">
                 <li><a href="../index.html">Introduction</a></li>
                 <li><a href="portrait.html">Portrait</a></li>
                 <li><a href="realisation.html">Réalisation</a></li>
@@ -27,36 +25,36 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <div>
-            <h1>Quiz : Connaissez-vous Joëlle Coutaz ?</h1>
+    <header class="hero">
+        <div class="container">
+            <h1>Quiz Interactif</h1>
             <p>
-                Testez vos connaissances à travers 10 questions interactives.
+                Testez vos connaissances sur la vie et les travaux de Joëlle Coutaz.
             </p>
         </div>
     </header>
-    <!--corps de page-->
-    <main>
-        <section>
-            <div>
-                <p id="score"></p>
-            </div>
-            <form id="quizForm">
-                <fieldset id="questionsContainer">
 
-                </fieldset>
-                <div id="boutons">
-                    <input type="reset" value="reset">
-                    <input type="submit" value="submit">
-                </div>
-            </form>
+    <main class="container">
+        <section class="section-card">
+            <article>
+                <div id="score" class="category-tag mb-4" style="display:none"></div>
+                <form id="quizForm">
+                    <div id="questionsContainer">
+                        <!-- Injecté par script_quizz.js -->
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="reset" class="btn-primary" style="background:var(--secondary)">Réinitialiser</button>
+                        <button type="submit" class="btn-primary">Valider mes réponses</button>
+                    </div>
+                </form>
+            </article>
         </section>
     </main>
     <!--pied de page-->
-    <footer>
-        <p><u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u> |
-            <a href="../mention/mentions-legales.html" target="_blank">Mentions légales</a>
-        </p>
+    <footer class="main-footer">
+        <div class="container">
+           <p>Réalisé par <span>T-Julfab</span> | <a href="../mention/mentions-legales.html" style="color: #2972d9;">Mentions Légales</a> | Tous les droits sont réservés</p>
+        </div>
     </footer>
 </body>
 

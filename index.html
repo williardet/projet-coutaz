@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduire - Joëlle Coutaz</title>
+    <title>Joëlle Coutaz - Pionnière de l'IHM</title>
     <link rel="shortcut icon" href="images/books-stack-of-three.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/styleIndex.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script_quizz.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="aligner">
-            <a href="index.html">Joëlle Coutaz</a>
+            <a href="index.html" class="nav-brand">Joëlle Coutaz</a>
             <button id="menu-btn">
                 <span></span>
             </button>
-        </div>
-        
-        <div>
-            <ul id="menu">
+            <ul id="menu" class="nav-links">
                 <li><a class="actif" href="index.html">Introduction</a></li>
                 <li><a href="pages/portrait.html">Portrait</a></li>
                 <li><a href="pages/realisation.html">Réalisation</a></li>
@@ -28,9 +25,9 @@
             </ul>
         </div>
     </nav>
-    <!--corps de page-->
-    <header>
-        <div>
+
+    <header class="hero">
+        <div class="container">
             <h1>Présentation de l'application</h1>
             <p>
                 Découvrez le parcours, les réalisations et l'impact majeur de Joëlle Coutaz,
@@ -38,16 +35,18 @@
             </p>
         </div>
     </header>
-    <main>
-        <section class="contenue">
+
+    <main class="container">
+        <section class="section-card">
             <aside>
-                <a href="pages/portrait.html">Portrait</a>
+                <span class="category-tag">Biographie</span>
             </aside>
-            <section>
+            <article>
+                <h2><a href="pages/portrait.html">Portrait</a></h2>
                 <div class="image-triple">
-                    <div><img src="images/joelle.jpg" alt="1"></div>
-                    <div><img src="images/156.jpg" alt="2"></div>
-                    <div><img src="images/56.jpg" alt="3"></div>
+                    <img src="images/joelle.jpg" alt="Joëlle Coutaz en conférence">
+                    <img src="images/156.jpg" alt="Recherche IIHM">
+                    <img src="images/56.jpg" alt="Interfaces interactives">
                 </div>
                 <p>
                     Cette section retrace les étapes clés de la vie de Joëlle Coutaz : formation,
@@ -55,45 +54,47 @@
                     l'interaction homme-machine. Une biographie illustrée qui met en lumière son
                     influence durable dans le monde numérique.
                 </p>
-            </section>
+            </article>
         </section>
 
-        <section class="contenue">
-            <aside class="gris-1">
-                <a href="pages/realisation.html">Réalisation</a>
+        <section class="section-card reverse">
+            <aside>
+                <span class="category-tag variant">Recherche</span>
             </aside>
-            <section>
+            <article>
+                <h2><a href="pages/realisation.html">Réalisation</a></h2>
                 <p>
                     Explorez ses contributions scientifiques majeures, ses projets de recherche et son rôle
                     pionnier dans l'évolution des interfaces et systèmes interactifs.
                 </p>
-                <ul>
+                <ul class="feature-list">
                     <li>Projet FAME (2001-2004) - Collaboration avec le KIT</li>
                     <li>Projet CAMELEON - Ingénierie des interfaces adaptatives</li>
                     <li>Projet CONTINUUM (2008-2011) - Interactions multi-supports</li>
                 </ul>
-            </section>
+            </article>
         </section>
 
-        <section class="contenue">
+        <section class="section-card">
             <aside>
-                <a href="pages/quizz.html">Quizz</a>
+                <span class="category-tag">Interactivité</span>
             </aside>
-            <section>
+            <article>
+                <h2><a href="pages/quizz.html">Quizz</a></h2>
                 <p>
                     Testez vos connaissances grâce à un quiz interactif de 10 questions portant sur la vie,
                     les travaux et les contributions de Joëlle Coutaz. Un moyen ludique d'évaluer votre
                     compréhension et d'approfondir vos connaissances.
                 </p>
-            </section>
+                <a href="pages/quizz.html" class="btn-primary">Commencer le test</a>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <p>
-            <u>julfab-williarde.ovono-etoubembe@etu.univ-tlse2.fr</u> |
-            <a href="mention/mentions-legales.html" target="_blank">Mentions légales</a>
-        </p>
+    <footer class="main-footer">
+        <div class="container">
+           <p>Réalisé par <span>T-Julfab</span> | <a href="mention/mentions-legales.html" style="color: #2972d9;">Mentions Légales</a> | Tous les droits sont réservés</p>
+        </div>
     </footer>
 </body>
 
